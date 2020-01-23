@@ -1,0 +1,17 @@
+<script type="text/javascript">
+    $("#add-btn").on("click", function(event) {
+      event.preventDefault();
+      var newWaitList = {
+        name: $("#name").val().trim(),
+        email: $("#email").val().trim(),
+        phone: $("#phone").val().trim(),
+        uniqueID: $("#uniqueID").val().trim()
+      };
+
+      $.post("/api/reservations", newWaitList)
+        .then(function(data) {
+          console.log("wait.html", data);
+          alert("Loading Current Wait List...");
+        });
+    });
+  </script>
