@@ -1,0 +1,26 @@
+
+h1 {
+    font-size: 64px;
+    color: navy;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.btn:hover {
+    background: white;
+    color: navy;
+    border: 1px solid navy;
+}
+
+.btn {
+    background: navy;
+    color: white;
+    border: 1px solid navy;
+}
+
+#control-panel {
+    margin: auto;
+    text-align: center !important;
+}
